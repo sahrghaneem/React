@@ -5,12 +5,11 @@
 //import Button from "./components/question4.1/button1"
 //  import Card from "./components/question4.2/card"
 //  import Image from "./components/question4.2/img"
-import React from "react";
-import Boxs from "./components/question6.1/boxs";
+//import Boxs from "./components/question6.1/boxs";
+import Count from "./components/question7.1/7.1"
 
-class App extends React.Component {
-  render(){
-    return (
+function App() {
+  return (
    
       // <Sahr/>
      // <Box1/>
@@ -20,11 +19,9 @@ class App extends React.Component {
 // <div>
 // <Card img={Image} title={'text1'} descrption />
 // </div>
-     <Boxs/>
+    // <Boxs/>
+     <Count/>
   );
-
-  }
- 
 }
 
 export default App;
