@@ -6,7 +6,8 @@
 //  import Card from "./components/question4.2/card"
 //  import Image from "./components/question4.2/img"
 //import Boxs from "./components/question6.1/boxs";
-import Count from "./components/question7.1/7.1"
+//import Count from "./components/question7.1/7.1"
+import Hide from "./components/question7.2/hide"
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
 // <Card img={Image} title={'text1'} descrption />
 // </div>
     // <Boxs/>
-     <Count/>
+     //<Count/>
+     <Hide/>
   );
 }
 
