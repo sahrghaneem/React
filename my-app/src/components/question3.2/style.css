@@ -1,0 +1,10 @@
+
+.quiz{
+   border: 1px solid black;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(247, 241, 241);
+    margin-left: 25%;
+    margin-top: 10%;
+}
+

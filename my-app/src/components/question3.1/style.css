@@ -1,0 +1,32 @@
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    background-color:green ;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color:blue ;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2px;
+    width: 400px;
+    height: 200px;
+    background-color:pink ;
+}
+.box4{
+    width: 200px;
+    height: 100px;
+    background-color:purple ;
+    margin: 4px;
+}
