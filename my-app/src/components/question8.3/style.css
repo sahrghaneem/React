@@ -1,0 +1,15 @@
+.box{
+width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2.5s;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    from {background-color: rgb(45, 86, 219);}
+    to {background-color: rgb(220, 62, 235);}
+
+  }

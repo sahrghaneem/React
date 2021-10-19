@@ -10,6 +10,8 @@
 //import Hide from "./components/question7.2/hide"
 //import Color from "./components/question8.1/8.1"
 //import Slidebox from "./components/question8.2/8.2"
+import Circle from "./components/question8.3/8.3"
+
 function App() {
   return (
       // <Sahr/>
@@ -25,6 +27,7 @@ function App() {
      //<Hide/>
      //<Color/>
     // <Slidebox/>
+    <Circle/>
   );
 }
 
