@@ -7,11 +7,10 @@
 //  import Image from "./components/question4.2/img"
 //import Boxs from "./components/question6.1/boxs";
 //import Count from "./components/question7.1/7.1"
-import Hide from "./components/question7.2/hide"
-
+//import Hide from "./components/question7.2/hide"
+import Color from "./components/question8.1/8.1"
 function App() {
   return (
-   
       // <Sahr/>
      // <Box1/>
     // <Quiz/>
@@ -22,7 +21,8 @@ function App() {
 // </div>
     // <Boxs/>
      //<Count/>
-     <Hide/>
+     //<Hide/>
+     <Color/>
   );
 }
 
