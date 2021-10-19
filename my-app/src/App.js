@@ -9,7 +9,7 @@
 //import Count from "./components/question7.1/7.1"
 //import Hide from "./components/question7.2/hide"
 //import Color from "./components/question8.1/8.1"
-import Slidebox from "./components/question8.2/8.2"
+//import Slidebox from "./components/question8.2/8.2"
 function App() {
   return (
       // <Sahr/>
@@ -24,7 +24,7 @@ function App() {
      //<Count/>
      //<Hide/>
      //<Color/>
-     <Slidebox/>
+    // <Slidebox/>
   );
 }
 

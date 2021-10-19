@@ -29,8 +29,6 @@ componentDidUpdate=()=>{
         { this.state.slidebox ? (<div className='box2'></div>) : '' }
         { this.state.slidebox ? (<div className='box3'></div>) : '' }
       </div>
-     
-
     );
    }
   }
