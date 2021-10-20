@@ -9,44 +9,39 @@ class Jokesjoke extends React.Component {
         }
     }
 
- getJoke = async () => {
+    getrandomJoke = async () => {
         const url = await (await fetch(`https://api.chucknorris.io/jokes/random`)).json();
          console.log(url.value);
          this.setState({ joke:url.value});
         // val.innerHTML=url.value;
     }
-    history = async () => {
-        const history = await (await fetch(`https://api.chucknorris.io/jokes/random?category=history`)).json();
-         console.log(history.value);
-         this.setState({ joke:history.value});
+  
+
+    getJokeByCategory = async (e) => {
+        console.log(e);
+        const jokereponse = await (await fetch(`https://api.chucknorris.io/jokes/random?category=${e.target.classList[1]}`)).json();
+         console.log(jokereponse.value);
+         this.setState({ joke:jokereponse.value});
         // val.innerHTML=url.value;
     }
 
-    categories = async () => {
-        const animal = await (await fetch(`https://api.chucknorris.io/jokes/random?category=animal`)).json();
-         console.log(animal.value);
-         this.setState({ joke:animal.value});
-        // val.innerHTML=url.value;
-    }
+    render() {
 
-render() {
-
-    return (
-        <div>
-    <div className="container">
-        <div id="joke"className='joke'>
-        {this.state.joke}
+        return (
+            <div>
+        <div className="container">
+            <div id="joke"className='joke'>
+            {this.state.joke}
+            </div>
+            <button id="get_joke" className="btn " onClick={this.getJoke}>get another joke</button>
+            <button id="get_joke" className="btn history" onClick={this.getJokeByCategory}>get history joke</button>
+            <button id="get_joke" className="btn animal" onClick={this.getJokeByCategory }>get animal joke</button>
+        </div>        
         </div>
-        <button id="get_joke" className="btn" onClick={this.getJoke}>get another joke</button>
-        <button id="get_joke" className="btn" onClick={this.history}>get history joke</button>
-        <button id="get_joke" className="btn" onClick={this.categories}>get animal joke</button>
 
-    </div>        
-    </div>
+            );
+        }
 
-         );
     }
 
-}
-
-export default Jokesjoke;
+    export default Jokesjoke;
