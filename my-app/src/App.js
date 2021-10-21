@@ -13,7 +13,8 @@
 //import Circle from "./components/question8.3/8.3"
 //import Spain from "./components/question9.1/9.1";
 //import Jokes from "./components/question12.1/12.1"
-import ChangeColor from "./components/question11.1/11.1"
+//import ChangeColor from "./components/question11.1/11.1"
+import Check from "./components/question11.2/11.2"
 function App() {
   return (
       // <Sahr/>
@@ -32,7 +33,8 @@ function App() {
     //<Circle/>
     //<Spain/>
    // <Jokes/>
-    <ChangeColor/>
+   // <ChangeColor/>
+   <Check/>
   );
 }
 
