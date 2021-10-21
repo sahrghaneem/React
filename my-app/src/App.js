@@ -12,7 +12,8 @@
 //import Slidebox from "./components/question8.2/8.2"
 //import Circle from "./components/question8.3/8.3"
 //import Spain from "./components/question9.1/9.1";
-import Jokes from "./components/question12.1/12.1"
+//import Jokes from "./components/question12.1/12.1"
+import ChangeColor from "./components/question11.1/11.1"
 function App() {
   return (
       // <Sahr/>
@@ -30,7 +31,8 @@ function App() {
     // <Slidebox/>
     //<Circle/>
     //<Spain/>
-    <Jokes/>
+   // <Jokes/>
+    <ChangeColor/>
   );
 }
 

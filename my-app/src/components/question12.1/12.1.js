@@ -9,6 +9,11 @@ class Jokesjoke extends React.Component {
         }
     }
 
+
+    componentDidMount(){
+        this.getrandomJoke();
+    }
+
     getrandomJoke = async () => {
         const url = await (await fetch(`https://api.chucknorris.io/jokes/random`)).json();
          console.log(url.value);
@@ -18,7 +23,7 @@ class Jokesjoke extends React.Component {
   
 
     getJokeByCategory = async (e) => {
-        console.log(e);
+        console.log(e.target);
         const jokereponse = await (await fetch(`https://api.chucknorris.io/jokes/random?category=${e.target.classList[1]}`)).json();
          console.log(jokereponse.value);
          this.setState({ joke:jokereponse.value});
@@ -33,9 +38,9 @@ class Jokesjoke extends React.Component {
             <div id="joke"className='joke'>
             {this.state.joke}
             </div>
-            <button id="get_joke" className="btn " onClick={this.getJoke}>get another joke</button>
-            <button id="get_joke" className="btn history" onClick={this.getJokeByCategory}>get history joke</button>
-            <button id="get_joke" className="btn animal" onClick={this.getJokeByCategory }>get animal joke</button>
+            <button id="get_joke"  className="btn" onClick={this.getJoke}>get another joke</button>
+            <button id="get_joke" categoryname="history" className="btn history" onClick={this.getJokeByCategory}>get history joke</button>
+            <button id="get_joke" data-categoryname="animal" className="btn animal" onClick={this.getJokeByCategory }>get animal joke</button>
         </div>        
         </div>
 
