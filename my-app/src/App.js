@@ -14,7 +14,11 @@
 //import Spain from "./components/question9.1/9.1";
 //import Jokes from "./components/question12.1/12.1"
 //import ChangeColor from "./components/question11.1/11.1"
-import Check from "./components/question11.2/11.2"
+//import Check from "./components/question11.2/11.2"
+//import Form from "./components/question12.1/12.1"
+//import UserData from "./components/question13.1/user";
+import {Paragph} from "./components/question18.1/18.1"
+
 function App() {
   return (
       // <Sahr/>
@@ -34,7 +38,10 @@ function App() {
     //<Spain/>
    // <Jokes/>
    // <ChangeColor/>
-   <Check/>
+   //<Check/>
+   //<Form/>
+   //<UserData/>
+   <Paragph text="State and Lifecycle" lengthtext="10" />
   );
 }
 
