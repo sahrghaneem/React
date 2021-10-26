@@ -20,34 +20,39 @@
 //import {Paragph} from "./components/question18.1/18.1"
 //import {ToDo} from "./components/question18.2/18.2";
 //import Fetchmovies from "./components/question19.1/19.1"
- import Countries from "./components/question19.2/19.2"
+ //import Countries from "./components/question19.2/19.2"
+//import {Alogolia} from "./components/question19.3/19.3"
+import {Users} from "./components/question17.1/17.1"
 
 function App() {
   return (
-      // <Sahr/>
-     // <Box1/>
-    // <Quiz/>
-    // <Button txt="important"/>,
-     // <Button txt="not-important"/>
-// <div>
-// <Card img={Image} title={'text1'} descrption />
-// </div>
-    // <Boxs/>
-     //<Count/>
-     //<Hide/>
-     //<Color/>
-    // <Slidebox/>
-    //<Circle/>
-    //<Spain/>
-   // <Jokes/>
-   // <ChangeColor/>
-   //<Check/>
-   //<Form/>
-   //<UserData/>
-   //<Paragph text="State and Lifecycle" lengthtext="10" />
-   //<ToDo/>
-  // <Fetchmovies/>
-  <Countries/>
+//<Sahr/>
+//<Box1/>
+//<Quiz/>
+//<Button txt="important"/>,
+//<Button txt="not-important"/>
+//<div>
+//<Card img={Image} title={'text1'} descrption />
+//</div>
+//<Boxs/>
+//<Count/>
+//<Hide/>
+//<Color/>
+//<Slidebox/>
+//<Circle/>
+//<Spain/>
+//<Jokes/>
+//<ChangeColor/>
+//<Check/>
+//<Form/>
+//<UserData/>
+//<Paragph text="State and Lifecycle" lengthtext="10" />
+//<ToDo/>
+//<Fetchmovies/>
+//<Countries/>
+//<Alogolia/>
+<Users/>
+
   );
 }
 
