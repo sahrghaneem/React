@@ -17,7 +17,10 @@
 //import Check from "./components/question11.2/11.2"
 //import Form from "./components/question12.1/12.1"
 //import UserData from "./components/question13.1/user";
-import {Paragph} from "./components/question18.1/18.1"
+//import {Paragph} from "./components/question18.1/18.1"
+//import {ToDo} from "./components/question18.2/18.2";
+//import Fetchmovies from "./components/question19.1/19.1"
+ import Countries from "./components/question19.2/19.2"
 
 function App() {
   return (
@@ -41,7 +44,10 @@ function App() {
    //<Check/>
    //<Form/>
    //<UserData/>
-   <Paragph text="State and Lifecycle" lengthtext="10" />
+   //<Paragph text="State and Lifecycle" lengthtext="10" />
+   //<ToDo/>
+  // <Fetchmovies/>
+  <Countries/>
   );
 }
 
