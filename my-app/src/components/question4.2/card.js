@@ -16,13 +16,14 @@ return(
     
     <div className={'links'}>
 <a href={link}>link</a>
-<a href={www.}>link</a>
+
     </div>
 
 </div>
+</div>
 
-<div/>
+
 )
 }
 
-export default Card;
+export default Card

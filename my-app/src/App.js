@@ -3,7 +3,7 @@
 // import Quiz from "./components/question3.2/quiz3.2";
 // import Boxs from "./components/question6.1/boxs";
 //import Button from "./components/question4.1/button1"
-//  import Card from "./components/question4.2/card"
+  import Card from "./components/question4.2/card"
 //  import Image from "./components/question4.2/img"
 //import Boxs from "./components/question6.1/boxs";
 //import Count from "./components/question7.1/7.1"
@@ -23,7 +23,7 @@
  //import Countries from "./components/question19.2/19.2"
 //import {Alogolia} from "./components/question19.3/19.3"
 //import {Users} from "./components/question17.1/17.1"
-import CheckBox from "./components/question18.4/18.4"
+//import CheckBox from "./components/question18.4/18.4"
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
 //<Button txt="important"/>,
 //<Button txt="not-important"/>
 //<div>
-//<Card img={Image} title={'text1'} descrption />
+<Card img={Image} title={'text1'} descrption />
 //</div>
 //<Boxs/>
 //<Count/>
@@ -53,7 +53,7 @@ function App() {
 //<Countries/>
 //<Alogolia/>
 //<Users/>
-<CheckBox/>
+//<CheckBox/>
 
   );
 }
