@@ -22,7 +22,8 @@
 //import Fetchmovies from "./components/question19.1/19.1"
  //import Countries from "./components/question19.2/19.2"
 //import {Alogolia} from "./components/question19.3/19.3"
-import {Users} from "./components/question17.1/17.1"
+//import {Users} from "./components/question17.1/17.1"
+import CheckBox from "./components/question18.4/18.4"
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
 //<Fetchmovies/>
 //<Countries/>
 //<Alogolia/>
-<Users/>
+//<Users/>
+<CheckBox/>
 
   );
 }

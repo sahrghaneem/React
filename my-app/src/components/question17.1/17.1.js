@@ -13,7 +13,10 @@ export const Users = () => {
                 console.log(use);
                 setUsersCountry(use.data)
             })
-    }, [])
+    }, []
+    
+)
+    
 
     const DataUser=(e)=>{
         if(e.target.name === 'name'){
