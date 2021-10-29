@@ -1,17 +1,50 @@
-
 import React from "react";
+import CheckFun from "./check";
 
-const Check =({value,buttonIschecked,isChecked})=>{
-    const clickhandler=()=>{
-        buttonIschecked(value)
-        setCheck(!check)
-        console.log(check);
+function CheckBox() {
+    const [check, setCheck] = React.useState(["one", "two", "three", "four", "five"])  
+    const [selected,setSelected] = React.useState([])
+    
+const handelClick =(value)=>{
+    let select = [...selected]
+    if(select.includes(value)){
+        setSelected(select.filter(val =>{
+            return val !== value
+        }))
+    
     }
-    return( 
-         <div>
-       <li ><input type={'checkbox'} onClick={clickhandler} value={value}  checked={isChecked}/> {value}</li>
-    </div>
-)
+    else{
+        select.push(value)
+        setSelected(select)
+    }  
+}
+const handelDelete = ()=>{
+  let result = check.filter(element=>{
+      return !selected.includes(element)
+  })
+  setCheck(result)
+  setSelected([])
+}
+const handelReset = ()=>{
+    setCheck(["one", "two", "three", "four", "five"])
 }
 
-export default Check
+    return (
+        <div>
+            {console.log('selected',selected)}
+             <input type={'button'} value={'Delete'} onClick={handelDelete}/>
+             <input type={'button'} value={'Reset'} onClick={handelReset}/>
+            
+            {
+                check.map(val => {
+                    return (
+                        <div>
+                            <CheckFun value={val} buttonIschecked={handelClick} isChecked={selected.includes(val)} />
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
+}
+export default CheckBox
